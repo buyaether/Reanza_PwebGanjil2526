@@ -1,0 +1,30 @@
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 500px;
+    margin: auto;
+    background: #2986cc;
+    padding: 10px;
+}
+
+.gallery-grid img {
+    width: 165px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.gallery-bagus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 500px;
+    margin: auto;
+    background: #2986cc;
+    padding: 5px 1px 5px 1px;
+}
+
+.gallery-bagus img {
+    width: 145px;
+    height: 60px;
+    margin: auto;
+    border: 1px solid black;
+}
