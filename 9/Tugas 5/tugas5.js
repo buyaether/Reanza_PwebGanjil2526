@@ -13,7 +13,7 @@ for (let i = 0; i < 3; i++) {
 
 document.writeln('<table border="1">');
 document.writeln('<tr class="table-header">')
-document.writeln('<th>Nama Barang</th><th>Harga Satuan</th><th>Jumlah Barang</th><th>Total Harga</th>');
+document.writeln('<th>Nama Barang</th><th>Harga Barang</th><th>Jumlah Beli</th><th>Sub Total</th>');
 document.writeln('</tr>');
 document.writeln('<tr>');
 document.writeln('<td>' + tugas5[0].nama + '</td><td>' + tugas5[0].harga + '</td><td>' + tugas5[0].jumlah + '</td><td>' + (tugas5[0].harga * tugas5[0].jumlah) + '</td>');
@@ -27,4 +27,18 @@ document.writeln('</tr>');
 document.writeln('<tr>');
 document.writeln('<td colspan="3">Total Harga Semua Barang</td><td><strong>' + ((tugas5[0].harga * tugas5[0].jumlah) + (tugas5[1].harga * tugas5[1].jumlah) + (tugas5[2].harga * tugas5[2].jumlah)) + '</strong></td>');
 document.writeln('</tr>');
- 
+document.writeln("<td colspan='2'></td><td colspan='2'><button onclick=\"bayar()\">Bayar</button></td>");
+document.writeln("</tr>");
+document.writeln("<tr>");
+document.writeln("<td colspan='4'>Reanza zahran zelmifa</td>");
+document.writeln("</tr>");
+document.writeln(" </table>");
+
+var total = (tugas5[0].harga * tugas5[0].jumlah) +
+            (tugas5[1].harga * tugas5[1].jumlah) +
+            (tugas5[2].harga * tugas5[2].jumlah);
+
+function bayar() {
+        uang = prompt("Masukkan jumlah uang: ");
+        total = alert("Bayar : " + uang + " Total Belanjaan : " + total + " Kembalian : " + (uang - total));
+    }
