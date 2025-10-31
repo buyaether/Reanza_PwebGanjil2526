@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script language="JavaScript">
+    function kirimDataDiri() {
+        var nama = document.ffrom.nama.value;
+        var alamat = document.ffrom.alamat.value;
+        document.ffrom.onama.value = nama;
+        document.ffrom.oalamat.value = alamat;
+    }
+</script>
+<body>
+    <form name="ffrom">
+        <h1>Masukkan Data Dengan Objek Teks</h1>
+        <hr>
+        <pre>
+            Nama Anda   : <input type="text" size="11" name="nama">
+            Alamat Anda : <input type="text" size="25" name="alamat">
+        </pre>
+        <br>
+        <input type="button" value="Kirim" onclick="kirimDataDiri()">
+        <input type="reset" value="Reset">
+        <h3>Output</h3>
+        <pre>
+            Jadi Nama Anda adalah : <input type="text" size="11" name="onama">
+            Alamat Anda di        : <input type="text" size="25" name="oalamat">
+        </pre>
+    </form>
+    <script src="tugas1.js"></script>
+</body>
+</html>

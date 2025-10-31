@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script language="JavaScript">
+    function tekan() {
+        var ketstr = (document.ffrom.ket.value);
+        document.ffrom.Oket.value = ketstr;
+    }
+</script>
+<body>
+    <form name="ffrom">
+        <h1>Memasukkan Data Dengan Objek Textarea</h1>
+        <hr>
+        <h3>Keterangan : </h3>
+        <br>
+        <textarea name="ket" rows="3" cols="30"></textarea>
+        <br><br>
+        <input type="button" value="Confirm" onclick="tekan()">
+        <input type="reset" value="Reset">
+        <h3>Output : </h3>
+        <textarea name="Oket" rows="3" cols="30"></textarea>
+    </form>
+</body>
+</html>

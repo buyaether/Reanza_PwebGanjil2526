@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Calon Mahasiswa Baru</h1>
+    <hr>
+    <form name="pendaftaran">
+        <pre>
+        Nama            : <input type="text" name="nama" size="30">
+        Alamat          : <input type="text" name="alamat" size="50">
+        Asal Sekolah    : <select name="sekolah">
+            <option value="SMA">SMA</option>
+            <option value="SMK">SMK</option>
+            <option value="MA">MA</option>
+        </select>
+        Jurusan dipilih : <input type="checkbox" name="jurusan1" value="TI"> Teknik Informatika
+                        : <input type="checkbox" name="jurusan2" value="MI"> Manajemen Informatika
+        Jenjang         : <input type="radio" name="jenjang" value="Diploma"> Diploma <input type="radio" name="jenjang" value="Sarjana"> Sarjana
+        <br>
+        <input type="button" value="Kirim" onclick="submitForm()"> <input type="button" value="Reset" onclick="document.pendaftaran.reset()">
+        </pre>
+        <hr>
+        <pre>
+        Nama            : <input type="text" name="onama" size="20">
+        Alamat          : <input type="text" name="oalamat" size="40">
+        Asal Sekolah    : <input type="text" name="osekolah" size="40">
+        Jurusan         : <textarea name="ojurusan" size="50" cols="50" rows="5"></textarea>
+        Jenjang         : <input type="text" name="ojenjang" size="30">
+        </pre>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

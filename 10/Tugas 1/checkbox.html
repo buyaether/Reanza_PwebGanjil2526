@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script language="JavaScript">
+    function checkbox_box(ffrom) {
+        var ket = "";
+        var ket1 = "";
+        if (ffrom.bola.checked == true) {
+            ket = "Nonton Bola";
+        }
+        if (ffrom.tv.checked == true) {
+            ket1 = "Nonton TV";
+        }
+        alert ('Hobby anda : ' + ket + ' ' + ket1);
+    }
+</script>
+<body>
+    <form>
+        <h1>Memasukkan Data Dengan Objek Checkbox</h1>
+        <hr>
+        <p>Hobby anda :
+            <input type="checkbox" value="ON" name="bola">Nonton Bola
+            <input type="checkbox" value="ON" name="tv">Nonton TV
+        </p>
+        <hr>
+        <p><input type="button" value="Confirm" onclick="checkbox_box(this.form)">
+            <input type="reset" value="Reset">
+        </p>
+    </from>
+</body>
+</html>
